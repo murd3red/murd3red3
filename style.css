@@ -1,7 +1,7 @@
 body {
   overflow: hidden;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://easyfiles.cc/2024/4/9f32ca7b-fd45-4acc-a097-91831378a7a7/bg.mp4);
+  background: url(https://easyfiles.cc/2024/4/9f32ca7b-fd45-4acc-a097-91831378a7a7/bg.mp4);
   background-position-x: center;
   background-position-y: -90px;
   background-size: 105%;
