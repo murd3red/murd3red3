@@ -1,0 +1,576 @@
+body {
+  overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://your.mom-is.art/f/_2B4Q_K2Qer);
+  background-position-x: center;
+  background-position-y: -90px;
+  background-size: 105%;
+  -webkit-user-drag: none;
+}
+
+.Links {
+  align-content: center;
+}
+
+.ghub {
+  margin-left: 2.5px;
+}
+
+.ig {
+  margin-left: 5px;
+}
+
+.guns {
+  margin-left: 2px;
+}
+
+.yt, .ghub, .guns, .ig, .x, .desc {
+  user-select: none;
+  position: relative;
+  display: inline-block;
+}
+
+.yt:hover .tooltip, .ghub:hover .tooltip, .guns:hover .tooltip, .ig:hover .tooltip, .x:hover .tooltip, .desc:hover .descB {
+  opacity: 1;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+
+.yt:not(:hover) .tooltip, .ghub:not(:hover) .tooltip, .guns:not(:hover) .tooltip, .ig:not(:hover) .tooltip, .x:not(:hover) .tooltip, .desc:hover .descB {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.Bb {
+  pointer-events: none;
+  user-select: none;
+  cursor: default;
+}
+
+.button .Bb {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.button:hover .Bb {
+  opacity: 1;
+}
+
+.button {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(19, 19, 19);
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 94%;
+  cursor: pointer;
+  position: absolute;
+  text-size-adjust: auto;
+  text-align: center;
+}
+
+.score {
+  font-size: larger;
+  color: white;
+  user-select: none;
+  margin-top: 27.5px;
+  -webkit-user-drag: none;
+}
+
+.Main {
+  margin-top: 295px;
+  margin-left: 12.5%;
+  position: absolute;
+  width: 500px;
+}
+
+.Links {
+  width: 40%;
+  user-select: none;
+}
+
+.Name {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  user-select: none;
+  text-shadow: rgba(255, 255, 255, 0.25) 0px 0px 2px, rgba(255, 255, 255, 0.25) 0px 0px 2px;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  color: white;
+  text-decoration: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.desc {
+  margin-top: -5px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.yti:hover, .ghubi:hover, .gunsi:hover, .igi:hover, .xi:hover {
+  transform: scale(1.3);
+  rotate: -4deg;
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.score {
+  transform: scale(1.3);
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.yti:not(:hover), .ghubi:not(:hover), .gunsi:not(:hover), .xi:not(:hover), .igi:not(:hover), .button:not(:hover), .score {
+  transform: scale(1);
+  transition: 0.3s;
+  -webkit-user-drag: none;
+}
+
+.yt, .ghub, .guns, .ig {
+  -webkit-user-drag: none;
+}
+
+.freePoints {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  margin-top: 42.5%;
+  margin-left: 1.3%;
+  text-size-adjust: auto;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.pointsText {
+  font-size: small;
+  user-select: none;
+  text-wrap: balance;
+}
+
+.screen, .notes {
+  overflow-wrap: break-word;
+  border-radius: 1em;
+  user-select: none;
+  opacity: 0;
+  background-color: rgb(30, 30, 30);
+  width: 700px;
+  height: 400px;
+  text-align: center;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 150px;
+}
+
+.Note1, .Note2, .Note3, .Note4 {
+  margin-left: 50px !important;
+  position: absolute;
+}
+
+.screenText {
+  text-decoration: underline;
+}
+
+.topText {
+  text-decoration: underline;
+}
+
+.closeScreen, .closeNotes {
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+  width: 200px;
+  height: 50px;
+  margin-top: 250px;
+  margin-left: 250px;
+  border-radius: 1em;
+  position: absolute;
+}
+
+
+.notesButton {
+  align-items: center;
+  background-color: rgb(19, 19, 19);
+  width: 200px;
+  height: 50px;
+  margin-top: 250px;
+  margin-left: 25px;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 2;
+}
+
+.freePoints:active {
+  transform: scale(0.9);
+  transition: 0.1s;
+}
+
+.freePoints:not(:active) {
+  transition: 0.1s;
+}
+
+.closeText, .notesText {
+  transform: translateY(-35%);
+}
+
+.closeScreen:active, .notesButton:active {
+  transition: 0.3s;
+}
+
+.notesButton:hover, .closeScreen:hover, .closeNotes:hover {
+  transition: 0.5s;
+  border: 2px solid rgb(138, 43, 226);
+  z-index: 3;
+}
+
+.closeScreen:not(:hover), .notesButton:not(:hover), .closeNotes:not(:hover) {
+  transition: 0.5s;
+  border: 2px solid rgb(19, 19, 19);
+  z-index: 1;
+}
+
+.myInput, .inputEthereum, .inputLitecoin {
+  position: absolute;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  size: 100%;
+}
+
+.bitcoin, .Ethereum, .Litecoin {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin-top: 10000px;
+  cursor: pointer;
+}
+
+.bitcoin:hover .tooltip, .Ethereum:hover .tooltip, .Litecoin:hover .tooltip {
+  opacity: 1;
+  transition-delay: 0.3s;
+  transition: 0.3s;
+}
+
+.bitcoin:not(:hover) .tooltip, .Ethereum:not(:hover) .tooltip, .Litecoin:not(:hover) .tooltip {
+  opacity: 0;
+  transition-delay: 0.3s;
+  transition: 0.3s;
+}
+
+.bitcoinIMG {
+  width: 36px;
+  rotate: -15deg;
+  position: absolute;
+  margin-top: -10001px;
+  margin-left: 6px;
+}
+
+.ethIMG {
+  width: 36px;
+  position: absolute;
+  margin-top: -10001px;
+  margin-left: 54px;
+}
+
+.ltIMG {
+  width: 36px;
+  position: absolute;
+  margin-top: -10001px;
+  margin-left: 102px;
+}
+
+.ethIMG:hover {
+  rotate: -15deg;
+  transform: scale(1.3);
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.bitcoinIMG:hover {
+  rotate: -19deg;
+  transform: scale(1.3);
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.ltIMG:hover {
+  rotate: -19deg;
+  transform: scale(1.3);
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.ltIMG:not(:hover) {
+  transform: scale(1);
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.bitcoinIMG:not(:hover), .ethIMG:not(:hover), .ltIMG:not(:hover) {
+  transform: scale(1);
+  transition-delay: 0.2s;
+  transition: 0.3s ease;
+  -webkit-user-drag: none;
+}
+
+.BTb {
+  width: 100px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin-left: 195px;
+  margin-top: 1px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.ETb {
+  width: 100px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin-left: 243.5px;
+  margin-top: 1px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.LTb {
+  width: 100px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin-left: 243.5px;
+  margin-top: 1px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.dot1, .dot2, .dot3, .dot4 {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.Date1, .Date2, .Date3, .Date4 {
+  position: absolute;
+  margin-left: 80%;
+}
+
+.Change1, .Change2, .Change3, .Change4 {
+  position: absolute;
+  margin-left: 50px;
+  color: white;
+}
+
+.dot1, .dot2, .dot3, .dot4 {
+  position: absolute;
+  margin-left: 35px;
+  color: white;
+}
+
+.Change1, .Date1, .Note1 {
+  margin-top: 20px;
+}
+
+.Change2, .Date2, .Note2 {
+  margin-top: 75px;
+}
+
+.Change3, .Date3, .Note3 {
+  margin-top: 130px;
+}
+
+.Change4, .Date4, .Note4 {
+  margin-top: 185px;
+}
+
+.tip {
+  position: absolute;
+  margin-left: 75%;
+  margin-top: -6%;
+  font-size: small;
+}
+
+.mute {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: rgb(100,100,100);
+  opacity: 0.9;
+  transition-duration: 0.1s;
+  border: 2px solid rgb(115, 115, 115);
+  border-radius: 1em;
+  user-select: none;
+  z-index: 1;
+}
+
+.playing, .muted {
+  z-index: 2;
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 22.5%;
+}
+
+.muted {
+  opacity: 0;
+}
+
+.mute:active {
+  transform: translateY(4px);
+  transition-duration: 0.075s;
+}
+
+.iframe {
+  position: absolute;
+  opacity: 0;
+}
+
+.dot1 {
+  margin-top: 110px;
+}
+
+.dot2 {
+  margin-top: 165px;
+}
+
+.dot3 {
+  margin-top: 220px;
+}
+
+.dot4 {
+  margin-top: 275px;
+}
+
+.bitcoin > .tooltip {
+  user-select: none;
+  color: white;
+  margin-top: -9955px;
+  margin-left: -20px;
+  transition-delay: 0.3s;
+}
+
+.Ethereum > .tooltip {
+  user-select: none;
+  color: white;
+  margin-top: -9955px;
+  margin-left: 25px;
+  transition-delay: 0.3s;
+}
+
+.Litecoin > .tooltip {
+  user-select: none;
+  color: white;
+  margin-top: -9955px;
+  margin-left: 70px;
+  transition-delay: 0.3s; 
+}
+
+.song {
+  position: absolute;
+  margin-left: -45%;
+  margin-top: -5%;
+  text-decoration: underline;
+}
+
+.song:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+  color: rgb(138, 43, 226);
+}
+
+.song:not(:hover) {
+  transform: scale(1);
+  transition: 0.1s;
+  color: white;
+}
+
+
+
+.userPage_clickToEnterOverlay__4kIhx {
+  align-items: center;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(0,0,0,.775);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: .75s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 100%;
+  z-index: 9999;
+  color: white;
+}
+
+.notesButton:hover .notesText, .closeScreen:hover .closeText, .closeNotes:hover .notesText {
+  color: rgb(138, 43, 226);
+  transition: 0.5s;
+}
+
+.notesButton:not(:hover) .notesText, .closeScreen:not(:hover) .closeText, .closeNotes:not(:hover) .notesText {
+  color: white;
+  transition: 0.5s;
+}
+
+.copiedAlert {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(30, 30, 30, 0.75);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 49.5%;
+  transform: translateX(-50%);
+  user-select: none;
+  text-align: center;
+  border: 2px solid rgb(138, 43, 226);
+  border-radius: 1em;
+  transition: 0.3s;
+}
+
+.alertText {
+  margin-top: 10px;
+}
+
+.email {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 188px;
+  z-index: 2;
+}
+
+.email:hover {
+  text-decoration: underline;
+  color: rgb(138, 43, 226);
+  transition: 0.3s;
+}
+
+.email:not(:hover) {
+  color: white;
+  transition: 0.3s;
+}
