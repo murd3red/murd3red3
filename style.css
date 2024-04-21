@@ -6,6 +6,10 @@ body {
   -webkit-user-drag: none;
 }
 
+.video {
+  position:absolute;
+}
+
 .Links {
   align-content: center;
 }
