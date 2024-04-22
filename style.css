@@ -3,10 +3,15 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   background-size: 105%;
   -webkit-user-drag: none;
+  background: rgb(255, 255, 255);
+  margin: 0;
+  
 }
 
 .video {
   position:absolute;
+  width: 100%;
+  z-index:-2;
 }
 
 .Links {
@@ -91,12 +96,12 @@ body {
 }
 
 .Name {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   position: absolute;
   margin-left: 10px;
   margin-top: 10px;
   user-select: none;
-  text-shadow: rgba(255, 255, 255, 0.25) 0px 0px 2px, rgba(255, 255, 255, 0.25) 0px 0px 2px;
+  text-shadow: rgba(226, 226, 226, 0.25) 0px 0px 2px, rgba(236, 236, 236, 0.25) 0px 0px 2px;
 }
 
 h1, h2, h3, h4, h5, h6, a {

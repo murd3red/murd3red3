@@ -3,7 +3,7 @@
 <head>
     <link rel="shortcut icon" href="icons/logo2131232.ico">
     <link rel="stylesheet" href="style.css">
-    <title>zy's page</title>
+    <title>BckStab's page</title>
 </head>    
 
     <script type="text/javascript">
@@ -22,11 +22,11 @@
     <meta property="og:title" content="BckStab's page">
     <meta property="og:description" content="The BEST Bio Page!">
     <meta property="og:image" content="https://easyfiles.cc/2024/4/97982e49-47e2-4756-9c2d-0c7e792e7f1c/vjkdvv.jpeg">
-    <meta property="og:url" content="https://zyqunix.github.io/bio">
+    <meta property="og:url" content="https://Murd3red.github.io/bio">
     
 <body>
 
-    <video src="https://easyfiles.cc/2024/4/9f32ca7b-fd45-4acc-a097-91831378a7a7/bg.mp4" class="video"></video>
+    <video loop autoplay src="https://easyfiles.cc/2024/4/26fc767e-bf17-4d50-89be-85b52cd61a3e/bg1.mp4" class="video"></video>
 
     <script src="index.js"></script>
 
@@ -46,35 +46,35 @@
 
         <div class="Links">
             <a class="yt" href="https://www.youtube.com/channel/UCS_LSx5Ccj9ti2EmrZ0OXVg" target="_blank">
-                <img class="yti" src="icons/white_youtube.png" width="36">
+                <img class="yti" src="icons/black_youtube.png" width="36">
                 <div class="tooltip" id="tooltip">
                     <div class="tooltipText">YouTube</div>
                 </div>
             </a>
 
-            <a class="ghub" href="https://www.github.com/zyqunix" target="_blank">
-                <img class="ghubi" src="icons/white_github.png" width="36">
+            <a class="ghub" href="https://www.github.com/murd3red" target="_blank">
+                <img class="ghubi" src="icons/black_github.png" width="36">
                 <div class="tooltip" id="tooltip">
                     <div class="tooltipText">GitHub</div>
                 </div>
             </a>
 
-            <a class="guns" href="https://zaza.bio/zyq" target="_blank">
-                <img class="gunsi" src="icons/white_guns.png" width="36">
+            <a class="guns" href="https://guns.lol/murd3red" target="_blank">
+                <img class="gunsi" src="icons/black_guns.png" width="36">
                 <div class="tooltip" id="tooltip">
                     <div class="tooltipText">guns.lol</div>
                 </div>
             </a>
 
             <a class="ig" href="https://www.instagram.com/zyqunix" target="_blank">
-                <img class="igi" src="icons/white_instagram.png" width="36">
+                <img class="igi" src="icons/black_instagram.png" width="36">
                 <div class="tooltip" id="tooltip">
                     <div class="tooltipText">Instagram</div>
                 </div>
             </a>
 
             <a class="x" href="https://twitter.com/real_zyqunix" target="_blank">
-                <img class="xi" src="icons/twitter.png" width="36">
+                <img class="xi" src="icons/black_twitter.png" width="36">
                 <div class="tooltip" id="tooltip">
                     <div class="tooltipText">Twitter</div>
                 </div>
@@ -172,9 +172,7 @@
 
     <iframe class="iframe" src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 
-    <audio loop class="music" id="music">
-        <source src="https://easyfiles.cc/2024/4/113da7b6-1843-433b-8a4b-5b1bb2da3941/BIO_AUDIO.ogg">
-    </audio>
+    
 
     <div class="userPage_clickToEnterOverlay__4kIhx" id="userPage_clickToEnterOverlay__4kIhx">
         <div class="userPage_clickToEnterText__pAALW" id="userPage_clickToEnterText__pAALW" style="font-weight:700;font-size:32px">click to enter...</div>
@@ -185,47 +183,20 @@
     </div>
 
     <script>
-
-        ///////////////////////////////////////////////////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////////////////
-
-
-        let muteButton = document.getElementById('mute')
-        let muteIcon = document.getElementById('muted')
-        let unmuteIcon = document.getElementById('playing')
-        let music = document.getElementById('music')
-        let count = 2;
-
-        music.volume = '0.15';
-
         let clickToEnterOverlay = document.getElementById('userPage_clickToEnterOverlay__4kIhx');
         let userPage_clickToEnterText__pAALW = document.getElementById('userPage_clickToEnterText__pAALW');
-
-
+    
+        let video = document.getElementById('video')
+    
         clickToEnterOverlay.onclick = () => {
             clickToEnterOverlay.style.opacity = '0';
             clickToEnterOverlay.style.transition = '0.75s';
             clickToEnterOverlay.style.zIndex = '-9999';
-            music.play();
+            video.volume = '0.2';
+    
+            video.play();
         };
-
-        muteButton.onclick = () => {
-            count += 1;
-            
-            if (count % 2) {
-                muteIcon.style.opacity = '1';
-                unmuteIcon.style.opacity = '0';
-                music.muted = true;
-            } else {    
-                muteIcon.style.opacity = '0';
-                unmuteIcon.style.opacity = '1';
-                music.muted = false;
-            }; 
-        };
-
-        ///////////////////////////////////////////////////////////////////////////////////////
-        ///////////////////////////////////////////////////////////////////////////////////////
-
+    
 
         function copyBTC() {
             var copyBTC = document.getElementById("myInput");
