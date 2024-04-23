@@ -1,14 +1,14 @@
 body {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://easyfiles.cc/2024/4/8d33850c-b855-4197-8668-0478fb1bf895/wallpaper.jpeg);
   overflow: hidden;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   background-size: 105%;
   -webkit-user-drag: none;
-  background: rgb(255, 255, 255);
-  margin: 0;
-  
+  margin: 0px;
 }
 
 .video {
+  margin-left: 0px;
   position:absolute;
   width: 100%;
   z-index:-2;
@@ -77,7 +77,7 @@ body {
 
 .score {
   font-size: larger;
-  color: white;
+  color: rgb(255, 255, 255);
   user-select: none;
   margin-top: 27.5px;
   -webkit-user-drag: none;
@@ -87,16 +87,16 @@ body {
   margin-top: 295px;
   margin-left: 12.5%;
   position: absolute;
-  width: 500px;
+  width: 600px;
 }
 
 .Links {
-  width: 40%;
+  width: 50%;
   user-select: none;
 }
 
 .Name {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 10px;
   margin-top: 10px;
@@ -117,6 +117,7 @@ h1, h2, h3, h4, h5, h6, a {
 
 .desc {
   margin-top: -5px;
+  color: rgb(255, 255, 255);
 }
 
 .button:hover {
@@ -145,20 +146,6 @@ h1, h2, h3, h4, h5, h6, a {
 
 .yt, .ghub, .guns, .ig {
   -webkit-user-drag: none;
-}
-
-.freePoints {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: rgb(30, 30, 30);
-  margin-top: 42.5%;
-  margin-left: 1.3%;
-  text-size-adjust: auto;
-  text-align: center;
-  color: white;
-  cursor: pointer;
 }
 
 .pointsText {
@@ -413,22 +400,6 @@ h1, h2, h3, h4, h5, h6, a {
   margin-left: 75%;
   margin-top: -6%;
   font-size: small;
-}
-
-.mute {
-  cursor: pointer;
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 10px;
-  background-color: rgb(100,100,100);
-  opacity: 0.9;
-  transition-duration: 0.1s;
-  border: 2px solid rgb(115, 115, 115);
-  border-radius: 1em;
-  user-select: none;
-  z-index: 1;
 }
 
 .playing, .muted {
